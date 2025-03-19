@@ -82,9 +82,11 @@
     </bean>
 
     <bean id="props" class="com.di.beans.InjectingProps">
-        <props key="mahesh">DSE</props>
-        <props key="robert">AIEng</props>
-        <props key="steve">DevOps</props>
+        <props>
+            <prop key="mahesh">DSE</prop>
+            <prop key="robert">AIEng</prop>
+            <prop key="steve">DevOps</prop>
+        <props>
     </bean>
 
 </beans>
