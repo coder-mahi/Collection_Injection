@@ -10,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ClientApp {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        
         Student list1 = (Student) context.getBean("student");
         InjectingList list2 = (InjectingList) context.getBean("list");
         InjectingSet set = (InjectingSet) context.getBean("set");
