@@ -1,0 +1,90 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student1" class="com.springcore.SpringCore.Student">
+        <property name="roll" value="144"/>
+        <property name="prn" value="0124ucsm2008"/>        
+        <property name="name" value="Mahesh Shinde"/>
+        <property name="address" value="Yeola"/>
+        <property name="gender" value="male"/>
+    </bean>
+</beans> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.di.beans.Student">
+       <!-- injecting list elements in student class -->
+       <property name="marks">
+            <list>
+                <value>10</value>
+                <value>20</value>
+            </list>
+        </property>
+
+       <property name="names">
+            <list>
+                <value>mahesh</value>
+                <value>harry</value>
+                <value>telusko</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="list" class="com.di.beans.InjectingList">
+       <!-- injecting list elements int InjectingList class-->
+       <property name="cities">
+            <list>
+                <value>mumbai</value>
+                <value>yeola</value>
+                <value>yeola</value>
+                <value>goa</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="set" class="com.di.beans.InjectingSet">
+       <!-- injecting set elements int InjectingList class-->
+       <property name="phones">
+            <set>
+                <value>987654321</value>
+                <value>12345679</value>
+                <value>00018838</value>
+            </set>
+        </property>
+    </bean>
+
+
+    <bean id="map" class="com.di.beans.InjectingMap">
+       <!-- injecting set elements int InjectingList class-->
+       <property name="facultysubjects">
+            <map>
+                <entry key="f1" value="dsa"/>
+                <entry key="f2" value="osy"/>
+                <entry key="f3" value="dbms"/>
+                <entry key="f4" value="math"/>
+            </map>
+        </property>
+       <property name="facultyphones">
+            <map>
+                <entry key="faculty1" value="123456991"/>
+                <entry key="faculty2" value="123456992"/>
+                <entry key="faculty3" value="123456993"/>
+                <entry key="faculty4" value="123456994"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="props" class="com.di.beans.InjectingProps">
+        <props key="mahesh">DSE</props>
+        <props key="robert">AIEng</props>
+        <props key="steve">DevOps</props>
+    </bean>
+
+</beans>
