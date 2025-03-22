@@ -28,6 +28,13 @@
 </p>
 
 ---
+<div align="center">
+  <img align="center" alt="coding" width="150" src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif">
+  <img align="center" alt="coding" width="150" src="https://assets.leetcode.com/static_assets/others/2550.gif">
+  <img align="center" alt="pandas" width="150" src="https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif">
+</div>
+
+---
 
 ### 📊 **GitHub Stats**
 <p align="center">
